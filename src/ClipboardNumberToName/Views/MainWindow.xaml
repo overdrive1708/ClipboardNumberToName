@@ -9,7 +9,7 @@
     xmlns:viewmodels="clr-namespace:ClipboardNumberToName.ViewModels"
     Title="{Binding Title}"
     Width="640"
-    Height="480"
+    Height="640"
     d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel,
                                      IsDesignTimeCreatable=True}"
     prism:ViewModelLocator.AutoWireViewModel="True"
@@ -19,7 +19,7 @@
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
             <StackPanel Margin="10,10,10,10">
                 <GroupBox
-                    Height="150"
+                    Height="250"
                     Margin="10,0,10,5"
                     Header="{x:Static resources:Strings.ConvertResult}">
                     <DataGrid
@@ -35,15 +35,20 @@
                 </GroupBox>
 
                 <GroupBox
-                    Height="100"
+                    Height="150"
                     Margin="10,5,10,5"
                     Header="{x:Static resources:Strings.ClipboardStrings}">
-                    <TextBox IsReadOnly="True" Text="{Binding ClipboardStrings}" />
+                    <TextBox
+                        HorizontalScrollBarVisibility="Auto"
+                        IsReadOnly="True"
+                        Text="{Binding ClipboardStrings}"
+                        VerticalScrollBarVisibility="Auto" />
                 </GroupBox>
 
                 <Button
                     Height="50"
                     Margin="10,5,10,5"
+                    Command="{Binding CommandConvert}"
                     Content="{x:Static resources:Strings.Convert}" />
 
                 <GroupBox Margin="10,5,10,5" Header="{x:Static resources:Strings.Configuration}">
