@@ -20,14 +20,17 @@
     <img alt="closed issues" src="https://img.shields.io/github/issues-closed-raw/overdrive1708/ClipboardNumberToName?style=plastic&logo=github&color=brightgreen">
 </div>
 
-## ダウンロード方法とインストール方法
+## ダウンロード方法
 [GitHubのReleases](https://github.com/overdrive1708/ClipboardNumberToName/releases)にあるLatestのAssetsよりClipboardNumberToName_vx.x.x.zipをダウンロードしてください｡
 
-インストール方法はT.B.D.
+## 準備
+
+ClipboardNumberToName.exeを起動させて｢変換｣ボタンを押してください｡  
+エラーメッセージと共にConvertInfo.dbが生成されるので､数値と名称の組み合わせをSQLite3形式で登録してください｡
 
 ## 使用方法
 
-T.B.D.
+ClipboardNumberToName.exeを起動させて変換対象をクリップボードに貼り付けてから｢変換｣ボタンを押してください｡
 
 ## 開発環境
 - Microsoft Visual Studio Community 2022

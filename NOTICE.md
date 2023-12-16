@@ -20,3 +20,11 @@ Under no circumstances can you use this product without (1) either a Community L
 The Prism license that contains the terms and conditions can be found at
 https://prismlibrary.com/downloads/prism_license.pdf
 ```
+
+## System.Data.SQLite.Core
+
+Source: https://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki
+
+### License
+
+License: Public Domain
