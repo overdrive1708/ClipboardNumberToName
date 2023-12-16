@@ -132,4 +132,14 @@
   <data name="Convert" xml:space="preserve">
     <value>変換</value>
   </data>
+  <data name="MessageDatabaseNotFound" xml:space="preserve">
+    <value>データベースファイルが見つかりませんでした｡
+ファイルを作成したのでデータを登録してください｡</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="NameNotFound" xml:space="preserve">
+    <value>名称が見つかりませんでした</value>
+  </data>
 </root>

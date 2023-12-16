@@ -115,11 +115,30 @@ namespace ClipboardNumberToName.Resources {
         }
         
         /// <summary>
+        ///   エラー に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   重要なお知らせ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ImportantNotice {
             get {
                 return ResourceManager.GetString("ImportantNotice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   データベースファイルが見つかりませんでした｡
+        ///ファイルを作成したのでデータを登録してください｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageDatabaseNotFound {
+            get {
+                return ResourceManager.GetString("MessageDatabaseNotFound", resourceCulture);
             }
         }
         
@@ -149,6 +168,15 @@ namespace ClipboardNumberToName.Resources {
         public static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   名称が見つかりませんでした に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string NameNotFound {
+            get {
+                return ResourceManager.GetString("NameNotFound", resourceCulture);
             }
         }
         
