@@ -13,10 +13,38 @@
     d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel,
                                      IsDesignTimeCreatable=True}"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    Topmost="{Binding IsAlwaysOnTop}"
     mc:Ignorable="d">
     <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
             <StackPanel Margin="10,10,10,10">
+                <GroupBox
+                    Height="200"
+                    Margin="10,5,10,5"
+                    Header="{x:Static resources:Strings.ConvertResult}">
+                    <DataGrid
+                        AutoGenerateColumns="False"
+                        HeadersVisibility="Column"
+                        IsReadOnly="True"
+                        ItemsSource="{Binding Path=ConvertResults}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Path=Number}" Header="{x:Static resources:Strings.Number}" />
+                            <DataGridTextColumn Binding="{Binding Path=Name}" Header="{x:Static resources:Strings.Name}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+
+                <GroupBox
+                    Height="100"
+                    Margin="10,5,10,5"
+                    Header="{x:Static resources:Strings.ClipboardStrings}">
+                    <TextBox IsReadOnly="True" Text="{Binding ClipboardStrings}" />
+                </GroupBox>
+
+                <GroupBox Margin="10,5,10,5" Header="{x:Static resources:Strings.Configuration}">
+                    <CheckBox Content="{x:Static resources:Strings.AlwaysOnTop}" IsChecked="{Binding IsAlwaysOnTop}" />
+                </GroupBox>
+
                 <TextBlock HorizontalAlignment="Right" Text="{Binding Title}" />
                 <TextBlock HorizontalAlignment="Right" Text="{Binding Copyright}" />
                 <TextBlock HorizontalAlignment="Right">

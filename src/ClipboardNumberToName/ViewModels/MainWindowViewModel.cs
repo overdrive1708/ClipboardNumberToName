@@ -1,5 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Reflection;
 
@@ -7,6 +8,24 @@ namespace ClipboardNumberToName.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+        //--------------------------------------------------
+        // クラス
+        //--------------------------------------------------
+        public class ConvertResult
+        {
+            /// <summary>
+            /// 数値
+            /// </summary>
+            private string _number = string.Empty;
+            public string Number { get => _number; set => _number = value; }
+
+            /// <summary>
+            /// 名称
+            /// </summary>
+            private string _name = string.Empty;
+            public string Name { get => _name; set => _name = value; }
+        }
+
         //--------------------------------------------------
         // バインディングデータ
         //--------------------------------------------------
@@ -28,6 +47,36 @@ namespace ClipboardNumberToName.ViewModels
         {
             get { return _copyright; }
             set { SetProperty(ref _copyright, value); }
+        }
+
+        /// <summary>
+        /// 変換結果
+        /// </summary>
+        private ObservableCollection<ConvertResult> _convertResults = new();
+        public ObservableCollection<ConvertResult> ConvertResults
+        {
+            get { return _convertResults; }
+            set { SetProperty(ref _convertResults, value); }
+        }
+
+        /// <summary>
+        /// クリップボード文字列
+        /// </summary>
+        private string _clipboardStrings = string.Empty;
+        public string ClipboardStrings
+        {
+            get { return _clipboardStrings; }
+            set { SetProperty(ref _clipboardStrings, value); }
+        }
+
+        /// <summary>
+        /// 常に手前に表示
+        /// </summary>
+        private bool _isAlwaysOnTop = true;
+        public bool IsAlwaysOnTop
+        {
+            get { return _isAlwaysOnTop; }
+            set { SetProperty(ref _isAlwaysOnTop, value); }
         }
 
         //--------------------------------------------------

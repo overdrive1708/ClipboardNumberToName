@@ -61,11 +61,47 @@ namespace ClipboardNumberToName.Resources {
         }
         
         /// <summary>
+        ///   常に手前に表示 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string AlwaysOnTop {
+            get {
+                return ResourceManager.GetString("AlwaysOnTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ClipboardNumberToName に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ApplicationName {
             get {
                 return ResourceManager.GetString("ApplicationName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   クリップボード文字列 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ClipboardStrings {
+            get {
+                return ResourceManager.GetString("ClipboardStrings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   設定 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Configuration {
+            get {
+                return ResourceManager.GetString("Configuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   変換結果 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ConvertResult {
+            get {
+                return ResourceManager.GetString("ConvertResult", resourceCulture);
             }
         }
         
@@ -95,6 +131,24 @@ namespace ClipboardNumberToName.Resources {
         public static string MessageOpenProjectUrl {
             get {
                 return ResourceManager.GetString("MessageOpenProjectUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   名称 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   数値 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Number {
+            get {
+                return ResourceManager.GetString("Number", resourceCulture);
             }
         }
     }

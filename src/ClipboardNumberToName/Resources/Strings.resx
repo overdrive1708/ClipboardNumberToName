@@ -111,4 +111,22 @@
 このアプリケーションを終了します｡
 エラーの詳細な情報を表示しますか?</value>
   </data>
+  <data name="AlwaysOnTop" xml:space="preserve">
+    <value>常に手前に表示</value>
+  </data>
+  <data name="ConvertResult" xml:space="preserve">
+    <value>変換結果</value>
+  </data>
+  <data name="ClipboardStrings" xml:space="preserve">
+    <value>クリップボード文字列</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>数値</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
 </root>
