@@ -1,0 +1,33 @@
+﻿<Window
+    x:Class="ClipboardNumberToName.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:resources="clr-namespace:ClipboardNumberToName.Resources"
+    xmlns:viewmodels="clr-namespace:ClipboardNumberToName.ViewModels"
+    Title="{Binding Title}"
+    Width="640"
+    Height="480"
+    d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel,
+                                     IsDesignTimeCreatable=True}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10,10,10,10">
+                <TextBlock HorizontalAlignment="Right" Text="{Binding Title}" />
+                <TextBlock HorizontalAlignment="Right" Text="{Binding Copyright}" />
+                <TextBlock HorizontalAlignment="Right">
+                    <Hyperlink
+                        Command="{Binding CommandOpenUrl}"
+                        CommandParameter="https://github.com/overdrive1708/ClipboardNumberToName"
+                        Cursor="Hand">
+                        <TextBlock Text="{x:Static resources:Strings.MessageOpenProjectUrl}" />
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
