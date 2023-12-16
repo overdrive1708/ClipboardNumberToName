@@ -97,6 +97,15 @@ namespace ClipboardNumberToName.Resources {
         }
         
         /// <summary>
+        ///   変換 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Convert {
+            get {
+                return ResourceManager.GetString("Convert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   変換結果 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ConvertResult {

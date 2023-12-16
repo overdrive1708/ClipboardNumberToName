@@ -19,8 +19,8 @@
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
             <StackPanel Margin="10,10,10,10">
                 <GroupBox
-                    Height="200"
-                    Margin="10,5,10,5"
+                    Height="150"
+                    Margin="10,0,10,5"
                     Header="{x:Static resources:Strings.ConvertResult}">
                     <DataGrid
                         AutoGenerateColumns="False"
@@ -40,6 +40,11 @@
                     Header="{x:Static resources:Strings.ClipboardStrings}">
                     <TextBox IsReadOnly="True" Text="{Binding ClipboardStrings}" />
                 </GroupBox>
+
+                <Button
+                    Height="50"
+                    Margin="10,5,10,5"
+                    Content="{x:Static resources:Strings.Convert}" />
 
                 <GroupBox Margin="10,5,10,5" Header="{x:Static resources:Strings.Configuration}">
                     <CheckBox Content="{x:Static resources:Strings.AlwaysOnTop}" IsChecked="{Binding IsAlwaysOnTop}" />

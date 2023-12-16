@@ -129,4 +129,7 @@
   <data name="Name" xml:space="preserve">
     <value>名称</value>
   </data>
+  <data name="Convert" xml:space="preserve">
+    <value>変換</value>
+  </data>
 </root>
