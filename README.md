@@ -24,16 +24,24 @@
 </div>
 
 ## ダウンロード方法
-[GitHubのReleases](https://github.com/overdrive1708/ClipboardNumberToName/releases)にあるLatestのAssetsよりClipboardNumberToName_vx.x.x.zipをダウンロードしてください｡
 
-## 準備
+[GitHubのReleases](https://github.com/overdrive1708/ClipboardNumberToName/releases)にあるLatestのAssetsよりClipboardNumberToName_vx.x.x_Installer.zipをダウンロードしてください｡
 
-ClipboardNumberToName.exeを起動させて｢変換｣ボタンを押してください｡  
-エラーメッセージと共にConvertInfo.dbが生成されるので､数値と名称の組み合わせをSQLite3形式で登録してください｡
+## インストール方法
+
+setup.exeを実行してください｡
+
+## 初回セットアップ
+
+インストールフォルダにあるConvertInfo.dbに､数値と名称の組み合わせをSQLite3形式で登録してください｡
 
 ## 使用方法
 
 ClipboardNumberToName.exeを起動させて変換対象をクリップボードに貼り付けてから｢変換｣ボタンを押してください｡
+
+## アンインストール方法
+
+プログラムの追加と削除(アプリと機能･インストールされているアプリ)から｢ClipboardNumberToName｣を選択してアンインストールしてください｡
 
 ## 開発環境
 - Microsoft Visual Studio Community 2022
