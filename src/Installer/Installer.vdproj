@@ -50,6 +50,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    {
+                    "Name" = "8:.NET デスクトップ ランタイム 6.0.25 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    }
+                }
             }
         }
         "Release"
@@ -210,15 +218,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ClipboardNumberToName"
-        "ProductCode" = "8:{0AB63CF1-AC37-48A0-8880-8BA3F35153B7}"
-        "PackageCode" = "8:{2F652C32-A2E1-4945-92B9-3DB18338B341}"
+        "ProductCode" = "8:{0997FED3-9EDC-4BF8-B4E7-A522B03814D4}"
+        "PackageCode" = "8:{F4CA21D3-75B8-4A15-94D9-0805A846C633}"
         "UpgradeCode" = "8:{4BE3C846-6FA7-4A30-92A7-3B7785AE9CDA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.1.0"
+        "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:overdrive1708"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
