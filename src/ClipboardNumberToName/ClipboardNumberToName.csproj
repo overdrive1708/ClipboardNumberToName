@@ -16,7 +16,7 @@
     <Resource Include="Resources\AppIconExe-multisize.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Unity" Version="9.0.537" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
   </ItemGroup>
   <ItemGroup>
