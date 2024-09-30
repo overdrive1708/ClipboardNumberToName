@@ -17,7 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Unity" Version="9.0.537" />
-    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Strings.Designer.cs">
